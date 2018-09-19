@@ -1,0 +1,25 @@
+<div class="col-md-6">
+  <h2> Speed/Shift wise report - Avg speed of spindle</h2>
+      <div style="text-align: center">
+        <table class="table table-striped" id="customers">
+          <thead>
+          <tr>
+            <th class="hidden">Machine Id</th>
+            <th>Machine Name</th>
+            <th>Spindle Name</th>
+            <th>Mean</th>
+            <th>CV %</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let spindle of spindles">
+            <td class="hidden">{{spindle.machineId}}</td>
+            <td>{{spindle.machineName}}</td>
+            <td>{{spindle.spindleName}}</td>
+            <td>{{spindle.mean}}</td>
+            <td>{{spindle.cvPercentage}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>

@@ -1,0 +1,113 @@
+<div class="container register">
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-4 register-right">
+        <h3 class="register-heading">1.Shift Details</h3>
+        <div class="row register-form">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="clientName">Shift 1</label>
+                </div>
+                <div class="form-group">
+                    <label for="clientName">Shift 2</label>
+                </div>
+                <div class="form-group">
+                    <label for="clientName">Shift 3</label>
+                </div>
+                <div class="form-group">
+                    <label for="clientName">G.Shift</label>
+                </div>
+              </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+            </div>
+          </div>
+          <div class="col-sm-5">
+              <div class="form-group">
+                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4 register-right">
+        <h3 class="register-heading">2.Machine Settings</h3>
+        <div class="row register-form">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="Front R. Dia" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="Slip %" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="Slip Duration" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="Slip occurance" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="Batch process" name="clientName" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.clientName" placeholder="Idle time" name="clientName" class="form-control" id="clientName">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 register-right">
+        <h3 class="register-heading">3.Machine Details</h3>
+        <div class="row register-form">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.numOfMachine" placeholder="No of Machine" name="numOfMachine" class="form-control" id="numOfMachine">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.deviceUUID" placeholder="Device UUID" name="deviceUUID" class="form-control" id="deviceUUID">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.totalNoOfSpindles" placeholder="Total No of spindls" name="totalNoOfSpindles" class="form-control"
+                id="totalNoOfSpindles">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.masterAddress" placeholder="Master Address" name="masterAddress" class="form-control" id="masterAddress">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.spindlesPer" placeholder="Spindles per" name="spindlesPer" class="form-control" id="spindlesPer">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.splMaster" placeholder="Spl. Master" name="splMaster" class="form-control" id="splMaster">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.numOfSpdMasters" placeholder="No of Spd.Masters" name="numOfSpdMasters" class="form-control"
+                id="numOfSpdMasters">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btnRegister" (click)="createUser()">Submit</button>
+        </div>
+        <!-- <input type="submit" class="btnRegister" value="Register" /> -->
+      </div>
+
+    </div>
+  </form>
+</div>

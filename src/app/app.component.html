@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="col-md-offset-1">
+    <div style="text-align: center">
+      <h1>
+        Spindle Reports
+      </h1>
+    </div>
+  </div>
+  
+  <!-- <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a class="active" href="#">Home</a></li>
+          <li><a routerLink="/settingsmenu">Settings Menu</a></li>
+          <li><a routerLink="/reports">Reports</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav> -->
+
+  <div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <a routerLink="/settingsmenu"><i class="fa fa-fw fa-search"></i> Settings Menu</a> 
+    <a routerLink="/reports"><i class="fa fa-fw fa-envelope"></i> Reports</a> 
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  </div>
+
+  <!-- <a style="margin-left:10px" routerLink="/add">Add User</a> -->
+  <router-outlet></router-outlet>
+  </div>
