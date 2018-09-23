@@ -20,9 +20,9 @@ export class SpindleService {
         return this.http.get<SpindleMachineDetailsBean[]>(this.spindleUrl);
     }
 
-    public saveSpindle(){
-        return this.http.post<SpindleMachineDetailsBean[]>(this.spindleUrl, SpindleMachineDetailsBean)
-    }
+    // public saveSpindle(){
+    //     return this.http.post<SpindleMachineDetailsBean[]>(this.spindleUrl, SpindleMachineDetailsBean)
+    // }
     public save(settingsMenu){
         return this.http.post<SettingsMenuBean[]>(this.spindleUrl, settingsMenu);
     }

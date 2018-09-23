@@ -9,18 +9,16 @@ import { SpindleService } from '../service/SpindleMachineDetailsService.service'
   templateUrl: './settings-menu.component.html',
   styleUrls: ['./settings-menu.component.css']
 })
-export class SettingsMenuComponent implements OnInit {
+export class SettingsMenuComponent {
 
-  settingsMenu: SettingsMenuBean[];
+  settingsMenu: SettingsMenuBean = new SettingsMenuBean();
 
   constructor(private router: Router, private spindleService: SpindleService) { }
 
-  ngOnInit() {
+  saveSettingsMenu(): void {
     this.spindleService.save(this.settingsMenu)
     .subscribe( data => {
       alert("Settings Menu details saved successfully");
-    })
-  }
-
-   
+    });
+  };
 }

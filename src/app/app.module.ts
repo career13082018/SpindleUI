@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SettingsMenuComponent } from './settings-menu/settings-menu.component';
+import { DashBoardComponent } from './dash-board/dash-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SpindleReportsComponent,
-    SettingsMenuComponent
+    SettingsMenuComponent,
+    DashBoardComponent
   ],
   imports: [
     BrowserModule,

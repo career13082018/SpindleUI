@@ -1,49 +1,49 @@
 <div class="container register">
-  <form (ngSubmit)="onSubmit()">
+  <form>
     <div class="row">
       <div class="col-md-4 register-right">
         <h3 class="register-heading">1.Shift Details</h3>
         <div class="row register-form">
             <div class="col-sm-3">
                 <div class="form-group">
-                    <label for="clientName">Shift 1</label>
+                    <label for="Shift1STime">Shift 1</label>
                 </div>
                 <div class="form-group">
-                    <label for="clientName">Shift 2</label>
+                    <label for="Shift2STime">Shift 2</label>
                 </div>
                 <div class="form-group">
-                    <label for="clientName">Shift 3</label>
+                    <label for="Shift3STime">Shift 3</label>
                 </div>
                 <div class="form-group">
-                    <label for="clientName">G.Shift</label>
+                    <label for="gShiftSTime">G.Shift</label>
                 </div>
               </div>
           <div class="col-sm-4">
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.Shift1STime" placeholder="S.Time" name="Shift1STime" class="form-control" id="Shift1STime">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.Shift2STime" placeholder="S.Time" name="Shift2STime" class="form-control" id="Shift2STime">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.Shift3STime" placeholder="S.Time" name="Shift3STime" class="form-control" id="Shift3STime">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="S.Time" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.gShiftSTime" placeholder="S.Time" name="gShiftSTime" class="form-control" id="gShiftSTime">
             </div>
           </div>
           <div class="col-sm-5">
               <div class="form-group">
-                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+                <input [(ngModel)]="settingsMenu.Shift1ETime" placeholder="E.Time" name="Shift1ETime" class="form-control" id="Shift1ETime">
               </div>
               <div class="form-group">
-                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+                <input [(ngModel)]="settingsMenu.Shift2ETime" placeholder="E.Time" name="Shift2ETime" class="form-control" id="Shift2ETime">
               </div>
               <div class="form-group">
-                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+                <input [(ngModel)]="settingsMenu.Shift3ETime" placeholder="E.Time" name="Shift3ETime" class="form-control" id="Shift3ETime">
               </div>
               <div class="form-group">
-                <input [(ngModel)]="settingsMenu.clientName" placeholder="E.Time" name="clientName" class="form-control" id="clientName">
+                <input [(ngModel)]="settingsMenu.gShiftETime" placeholder="E.Time" name="gShiftETime" class="form-control" id="gShiftETime">
               </div>
             </div>
         </div>
@@ -53,22 +53,22 @@
         <div class="row register-form">
           <div class="col-sm-12">
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="Front R. Dia" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.frontRDia" placeholder="Front R. Dia" name="frontRDia" class="form-control" id="frontRDia">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="Slip %" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.slipPercent" placeholder="Slip %" name="slipPercent" class="form-control" id="slipPercent">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="Slip Duration" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.slipDuration" placeholder="Slip Duration" name="slipDuration" class="form-control" id="slipDuration">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="Slip occurance" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.slipOccurance" placeholder="Slip occurance" name="slipOccurance" class="form-control" id="slipOccurance">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="Batch process" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.batchProcess" placeholder="Batch process" name="batchProcess" class="form-control" id="batchProcess">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.clientName" placeholder="Idle time" name="clientName" class="form-control" id="clientName">
+              <input [(ngModel)]="settingsMenu.idleTime" placeholder="Idle time" name="idleTime" class="form-control" id="idleTime">
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
           </div>
         </div>
         <div class="form-group">
-          <button type="submit" class="btnRegister" (click)="createUser()">Submit</button>
+          <button type="submit" class="btnRegister" (click)="saveSettingsMenu()">Submit</button>
         </div>
         <!-- <input type="submit" class="btnRegister" value="Register" /> -->
       </div>
