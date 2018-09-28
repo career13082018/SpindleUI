@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SpindleService } from '../service/SpindleMachineDetailsService.service';
 import { SpindleMachineDetailsBean } from '../model/SpindleMachineDetailsBean.model';
+import { SpindleMasterDetailsBean } from '../model/SpindleMasterDetailsBean.model';
 
 @Component({
   selector: 'app-spindle-reports',
@@ -10,7 +11,7 @@ import { SpindleMachineDetailsBean } from '../model/SpindleMachineDetailsBean.mo
 })
 export class SpindleReportsComponent implements OnInit{
 
-  spindles: SpindleMachineDetailsBean[];
+  spindles: SpindleMasterDetailsBean[];
 
   constructor(private router:Router, private spindleService:SpindleService) { }
 

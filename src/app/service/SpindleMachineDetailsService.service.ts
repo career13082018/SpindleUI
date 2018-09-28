@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { SpindleMachineDetailsBean } from "../model/SpindleMachineDetailsBean.model";
 import { SettingsMenuBean } from "../model/SettingsMenuBean.model";
+import { SpindleMasterDetailsBean } from "../model/SpindleMasterDetailsBean.model";
 
 
 const httpOptions = {
@@ -13,11 +14,12 @@ export class SpindleService {
 
     constructor(private http:HttpClient){}
 
-    private spindleUrl= 'http://localhost:8084/machine/spindles';
+    // private spindleUrl= 'http://localhost:8084/api/spindles';
     //private userUrl = '/api';
+    private spindleUrl= 'http://localhost:3000/spindleMasterDetailsSet';
 
     public getSpindleReports(){
-        return this.http.get<SpindleMachineDetailsBean[]>(this.spindleUrl);
+        return this.http.get<SpindleMasterDetailsBean[]>(this.spindleUrl);
     }
 
     // public saveSpindle(){
@@ -26,4 +28,5 @@ export class SpindleService {
     public save(settingsMenu){
         return this.http.post<SettingsMenuBean[]>(this.spindleUrl, settingsMenu);
     }
+    
 }

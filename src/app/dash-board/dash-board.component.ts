@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { SpindleMachineDetailsBean } from '../model/SpindleMachineDetailsBean.model';
+import { SpindleService } from '../service/SpindleMachineDetailsService.service';
+import { Router } from '@angular/router';
+import { SpindleMasterDetailsBean } from '../model/SpindleMasterDetailsBean.model';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-dash-board',
@@ -7,9 +12,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashBoardComponent implements OnInit {
 
-  constructor() { }
+  spindles: SpindleMasterDetailsBean[];
+
+  name:string;
+  keys: string[]=[];
+  
+  constructor(private router:Router, private spindleService:SpindleService) { }
 
   ngOnInit() {
-  }
-
+    this.spindleService.getSpindleReports()
+      .subscribe( data => {
+        this.spindles = data;
+        // this.keys= Object.keys(this.spindles[1])
+      });
+  };
 }
