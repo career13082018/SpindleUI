@@ -1,0 +1,39 @@
+Angular doc:
+	npm install -g @angular/cli( if you got any issues, try to clear cache and try again i.e., npm clear cache --force)
+	ng new my-app
+	cd my-app
+	ng serve --open
+	ng generate component user
+	ng generate component add-user
+	
+	Angular CLI Proxy Configuration
+To configure proxy in angular CLI, we need to create proxy.config.json file in the root of the angular project and edit the start script in package.json.
+
+proxy.config.json
+{
+  "/api/*": {
+    "target": "http://localhost:8080/user-portal",
+    "secure": false
+  }
+}
+The value of target here is the context root of the application and api is the endpoint for user API.
+
+package.json
+ "start": "ng serve --proxy-config proxy.config.json",
+Doing so, the request to http://localhost:4200/api would be proxied to http://localhost:8080/user-portal.
+
+
+
+
+
+Dist:
+npm install -g live-server
+live-server --port=9001
+
+
+for pdf:
+npm install jspdf 
+
+
+References:
+https://www.devglan.com/spring-boot/spring-boot-angular-example

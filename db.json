@@ -1,0 +1,148 @@
+{
+		"spindleMasterDetailsSet":[
+		{
+			"slaveAddress":"1",
+			"spindleNumber":"3",
+			"spindleRPM":"1000",
+			"frRPM":"200",
+			"slipCount":"2",
+			"slipRPM":"500",
+			"slipDev":"Report 2: Slip report/shift wise",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"2",
+			"spindleNumber":"4",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"Report 3: Breakage report/M/c wise summary",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"3",
+			"spindleNumber":"4",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"Report 1: Speed/shift wise report-avg speed of spindle",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"4",
+			"spindleNumber":"4",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"Report 4: Spindle Report",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"5",
+			"spindleNumber":"4",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"Report 5: Machine Report",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		}
+		],
+		"SlipReport":[
+		{
+			"slaveAddress":"MC1",
+			"spindleNumber":"1",
+			"spindleRPM":"1000",
+			"frRPM":"200",
+			"slipCount":"2",
+			"slipRPM":"500",
+			"slipDev":"Report 2: Slip report/shift wise",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"MC2",
+			"spindleNumber":"2",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"Report 3: Breakage report/M/c wise summary",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"MC3",
+			"spindleNumber":"3",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"Report 1: Speed/shift wise report-avg speed of spindle",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"MC4",
+			"spindleNumber":"4",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"200",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		},
+		{
+			"slaveAddress":"MC5",
+			"spindleNumber":"4",
+			"spindleRPM":"1500",
+			"frRPM":"200",
+			"slipCount":"6",
+			"slipRPM":"500",
+			"slipDev":"200",
+			"slipsTime":"10000",
+			"rogueCount":"3",
+			"idleCount":"5",
+			"idleDuration":"200",
+			"spindleMaster":"Spindle Master 1"
+		}
+		]
+	
+	
+	}
