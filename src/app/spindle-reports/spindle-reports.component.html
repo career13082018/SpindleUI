@@ -1,25 +1,37 @@
-<div class="col-md-6">
-  <h2> Speed/Shift wise report - Avg speed of spindle</h2>
-      <div style="text-align: center">
-        <table class="table table-striped" id="customers">
-          <thead>
+<div>
+  <br>
+    <label>Select report</label>
+    <!-- <select (change)="filterForeCasts($event.target.value)">
+        <option value="0">--All--</option>
+        <option *ngFor="let summary of summaries" value={{summary}}>
+            {{summary}}
+        </option>
+    </select> -->
+    <select class="form-control form-control-lg" (change)="filterForeCasts($event.target.value)">
+        <option value="0">---select report---</option>
+        <option *ngFor="let summary of spindles" value={{summary.slipDev}}>
+            {{summary.slipDev}}
+        </option>
+    </select>
+  <h3 class="table table-striped" id="dashboard"> Speed/Shift wise report - Avg speed of spindle</h3>
+  <table class="table table-striped" id="dashboard">
+      <thead>
+        <tr>
+          <td style="background-color: #aab8c7"></td>
+          <td *ngFor=" let key of spindles" style="background-color: #aab8c7">
+            {{key['slaveAddress']}}
+          </td>
+        </tr>
+      </thead>
+      <tbody>
           <tr>
-            <th class="hidden">Machine Id</th>
-            <th>Machine Name</th>
-            <th>Spindle Name</th>
-            <th>Mean</th>
-            <th>CV %</th>
+              <td></td>
+              <td *ngFor=" let res of spindles">
+                  {{res['spindleRPM']}} <br>
+                  {{res['slipCount']}} <br>
+                  {{res['rogueCount']}}
+              </td>
           </tr>
-          </thead>
-          <tbody>
-          <tr *ngFor="let spindle of spindles">
-            <td class="hidden">{{spindle.machineId}}</td>
-            <td>{{spindle.machineName}}</td>
-            <td>{{spindle.spindleName}}</td>
-            <td>{{spindle.mean}}</td>
-            <td>{{spindle.cvPercentage}}</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+        </tbody>
+      </table>
   </div>
