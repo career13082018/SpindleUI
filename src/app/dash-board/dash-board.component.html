@@ -3,28 +3,36 @@
   <h4 class="dashboard-horizontal-heading">Machine Number</h4>
   <h4 class="dashboard-subheading">Spindle Number</h4>
   <table class="table table-striped" id="dashboard">
-    <thead>
+    <!--<thead>
       <tr>
         <td></td>
-        <td *ngFor=" let key of spindles">
-          {{key['slaveAddress']}}
+        <td *ngFor=" let key of spindleMasterAddressArr">
+          {{key}}
         </td>
       </tr>
-    </thead>
+    </thead> -->
     <tbody>
       <!-- <tr *ngFor=" let res of spindles">
         <td *ngFor=" let key of keys">
           {{res[key]}}
         </td>
-      </tr> -->
-      <tr>
-          <td></td>
-          <td *ngFor=" let res of spindles">
-              RPM : {{res['spindleRPM']}} <br>
-              Slip : {{res['slipCount']}} <br>
+         Slip : {{res['slipCount']}} <br>
               Rogue : {{res['rogueCount']}}
-          </td>
+      </tr> -->
+      <ng-container  *ngFor=" let res of spindles" >
+      <tr  >
+         
+         <!-- <td> {{res.spindleMaster}}  </td> --> 
+         <ng-container *ngFor=" let res1 of res.spindleMasterDetailsSet"  >
+          <td [ngStyle]="{'background-color': res1.spindleRPM>1000? 'green' : 'red'}">              
+              Spindle No: {{res1['spindleNumber']}} <br>     
+              RPM : {{res1['spindleRPM']}} <br>  
+              Slip Count  : {{res1['slipCount']}}  
+              Rogue Count : {{res1['rogueCount']}}         
+          </td>         
+       </ng-container>
       </tr>
+    </ng-container>
     </tbody>
   </table>
 </div>

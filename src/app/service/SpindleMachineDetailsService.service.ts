@@ -16,13 +16,14 @@ export class SpindleService {
 
     // private spindleUrl= 'http://localhost:8084/api/spindles';
     //private userUrl = '/api';
-    private spindleUrl= 'http://localhost:3000/';
+    private spindleUrl= 'http://localhost:8084/user/machinedetails';
+    private spindleUrlDBJson= 'http://localhost:8084/user/machinedetails';
 
     public getSpindleReports(){
-        return this.http.get<SpindleMasterDetailsBean[]>(this.spindleUrl+"spindleMasterDetailsSet");
+        return this.http.get<SpindleMachineDetailsBean[]>(this.spindleUrl);
     }
     public getSpeedwiseReport(){
-        return this.http.get<SpindleMasterDetailsBean[]>(this.spindleUrl+"SlipReport");
+        return this.http.get<SpindleMasterDetailsBean[]>(this.spindleUrlDBJson+"SlipReport");
     }
 
     // public saveSpindle(){

@@ -12,18 +12,30 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class DashBoardComponent implements OnInit {
 
-  spindles: SpindleMasterDetailsBean[];
+  spindles: SpindleMachineDetailsBean[];
 
   name:string;
+  interval: any;
   keys: string[]=[];
-  
+  spindleMasterAddressArr: number []=[1,2,3,4,5,6,7,8,9,10];
   constructor(private router:Router, private spindleService:SpindleService) { }
 
   ngOnInit() {
-    this.spindleService.getSpindleReports()
-      .subscribe( data => {
-        this.spindles = data;
-        // this.keys= Object.keys(this.spindles[1])
-      });
+
+    this.refreshData();
+    this.interval = setInterval(() => { 
+        this.refreshData(); 
+    }, 1000);
+
+   
   };
+
+ 
+  refreshData(){
+    this.spindleService.getSpindleReports()
+    .subscribe( data => {
+      this.spindles = data;
+      // this.keys= Object.keys(this.spindles[1])
+    });   
+  }
 }

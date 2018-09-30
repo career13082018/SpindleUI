@@ -37,7 +37,7 @@ filterForeCasts(filterVal: any) {
 }
 
   ngOnInit() {
-    this.spindleService.getSpindleReports()
+    this.spindleService.getSpeedwiseReport()
       .subscribe( data => {
         this.spindles = data;
       });
