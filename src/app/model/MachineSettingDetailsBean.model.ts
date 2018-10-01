@@ -1,4 +1,4 @@
-export class SettingsMenuBean {
+export class MachineSettingDetailsBean {
 
     clientName: string;
     shiftList: string;

@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { SpindleMachineDetailsBean } from "../model/SpindleMachineDetailsBean.model";
-import { SettingsMenuBean } from "../model/SettingsMenuBean.model";
+import { MachineSettingDetailsBean } from "../model/SettingsMenuBean.model";
 import { SpindleMasterDetailsBean } from "../model/SpindleMasterDetailsBean.model";
 
 
@@ -16,11 +16,11 @@ export class SpindleService {
 
     // private spindleUrl= 'http://localhost:8084/api/spindles';
     //private userUrl = '/api';
-    private spindleUrl= 'http://localhost:8084/user/machinedetails';
-    private spindleUrlDBJson= 'http://localhost:8084/user/machinedetails';
+    private spindleUrl= 'http://localhost:8084/api';
+    private spindleUrlDBJson= 'http://localhost:8084/api/machinedetails';
 
     public getSpindleReports(){
-        return this.http.get<SpindleMachineDetailsBean[]>(this.spindleUrl);
+        return this.http.get<SpindleMachineDetailsBean[]>(this.spindleUrl+"/machinedetails");
     }
     public getSpeedwiseReport(){
         return this.http.get<SpindleMasterDetailsBean[]>(this.spindleUrlDBJson+"SlipReport");
@@ -30,7 +30,7 @@ export class SpindleService {
     //     return this.http.post<SpindleMachineDetailsBean[]>(this.spindleUrl, SpindleMachineDetailsBean)
     // }
     public save(settingsMenu){
-        return this.http.post<SettingsMenuBean[]>(this.spindleUrl, settingsMenu);
+        return this.http.post<MachineSettingDetailsBean[]>(this.spindleUrl+"/machinesettings", settingsMenu);
     }
     
 }

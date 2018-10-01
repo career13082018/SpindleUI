@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SettingsMenuBean } from '../model/SettingsMenuBean.model';
+import { MachineSettingDetailsBean } from '../model/MachineSettingDetailsBean.model';
 import { Router } from '@angular/router';
 import { SpindleService } from '../service/SpindleMachineDetailsService.service';
 
@@ -11,7 +11,7 @@ import { SpindleService } from '../service/SpindleMachineDetailsService.service'
 })
 export class SettingsMenuComponent {
 
-  settingsMenu: SettingsMenuBean = new SettingsMenuBean();
+  settingsMenu: MachineSettingDetailsBean = new MachineSettingDetailsBean();
 
   constructor(private router: Router, private spindleService: SpindleService) { }
 
