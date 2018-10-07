@@ -4,48 +4,38 @@
       <div class="col-md-4 register-right">
         <h3 class="register-heading">1.Shift Details</h3>
         <div class="row register-form">
-            <div class="col-sm-3">
-                <div class="form-group">
-                    <label for="Shift1STime">Shift 1</label>
-                </div>
-                <div class="form-group">
-                    <label for="Shift2STime">Shift 2</label>
-                </div>
-                <div class="form-group">
-                    <label for="Shift3STime">Shift 3</label>
-                </div>
-                <div class="form-group">
-                    <label for="gShiftSTime">G.Shift</label>
-                </div>
-              </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.Shift1STime" placeholder="S.Time" name="Shift1STime" class="form-control" id="Shift1STime">
+              <input [(ngModel)]="settingsMenu.shiftonestime" placeholder="Shift1-Start Time" name="shiftonestime" class="form-control"
+                id="shiftonestime">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.Shift2STime" placeholder="S.Time" name="Shift2STime" class="form-control" id="Shift2STime">
+              <input [(ngModel)]="settingsMenu.shifttwostime" placeholder="Shift2-Start Time" name="shifttwostime" class="form-control"
+                id="shifttwostime">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.Shift3STime" placeholder="S.Time" name="Shift3STime" class="form-control" id="Shift3STime">
+              <input [(ngModel)]="settingsMenu.shiftthreestime" placeholder="Shift3-Start time" name="shiftthreestime" class="form-control"
+                id="shiftthreestime">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="settingsMenu.gShiftSTime" placeholder="S.Time" name="gShiftSTime" class="form-control" id="gShiftSTime">
+              <input [(ngModel)]="settingsMenu.generalshiftstime" placeholder="GShift-Start Time" name="generalshiftstime" class="form-control"
+                id="generalshiftstime">
             </div>
           </div>
-          <div class="col-sm-5">
-              <div class="form-group">
-                <input [(ngModel)]="settingsMenu.Shift1ETime" placeholder="E.Time" name="Shift1ETime" class="form-control" id="Shift1ETime">
-              </div>
-              <div class="form-group">
-                <input [(ngModel)]="settingsMenu.Shift2ETime" placeholder="E.Time" name="Shift2ETime" class="form-control" id="Shift2ETime">
-              </div>
-              <div class="form-group">
-                <input [(ngModel)]="settingsMenu.Shift3ETime" placeholder="E.Time" name="Shift3ETime" class="form-control" id="Shift3ETime">
-              </div>
-              <div class="form-group">
-                <input [(ngModel)]="settingsMenu.gShiftETime" placeholder="E.Time" name="gShiftETime" class="form-control" id="gShiftETime">
-              </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.shiftoneetime" placeholder="Shift1-End Time" name="shiftoneetime" class="form-control" id="shiftoneetime">
             </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.shifttwoetime" placeholder="Shift2-End Time" name="shifttwoetime" class="form-control" id="shifttwoetime">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.shiftthreeetime" placeholder="Shift3-End Time" name="shiftthreeetime" class="form-control" id="shiftthreeetime">
+            </div>
+            <div class="form-group">
+              <input [(ngModel)]="settingsMenu.generalshiftetime" placeholder="GShift-End Time" name="generalshiftetime" class="form-control" id="generalshiftetime">
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-md-4 register-right">
@@ -70,6 +60,7 @@
             <div class="form-group">
               <input [(ngModel)]="settingsMenu.idleTime" placeholder="Idle time" name="idleTime" class="form-control" id="idleTime">
             </div>
+
           </div>
         </div>
       </div>
