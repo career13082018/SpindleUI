@@ -2,14 +2,12 @@ export class MachineSettingDetailsBean {
 
     clientName: string;
     shiftList: string;
-    shiftStartTime: string;
-    shiftEndTime: string;
     frontRDia: string;
     slipPercent: string;
     slipDuration: string;
     slipOccurance: string;
     batchProcess: string;
-    idleTime: string;
+    idleTime: Date;
     numOfMachine: number;
     machineUUID: string;
     deviceUUID: string;
@@ -18,4 +16,12 @@ export class MachineSettingDetailsBean {
     spindlesPer: string;
     splMaster:number;
     numOfSpdMasters:number;
+    shiftonestime: string;
+    generalshiftstime: string;
+    shifttwostime: string;
+    shiftthreestime: string;
+    shiftoneetime: string;
+    shifttwoetime: string;
+    shiftthreeetime: string;
+    generalshiftetime: string;
   }

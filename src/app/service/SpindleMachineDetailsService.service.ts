@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { SpindleMachineDetailsBean } from "../model/SpindleMachineDetailsBean.model";
-import { MachineSettingDetailsBean } from "../model/SettingsMenuBean.model";
+import { MachineSettingDetailsBean } from "../model/MachineSettingDetailsBean.model";
 import { SpindleMasterDetailsBean } from "../model/SpindleMasterDetailsBean.model";
 
 
